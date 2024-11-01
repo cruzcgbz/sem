@@ -10,7 +10,7 @@ Cecil Cruz Docker APP 0.1
 -->
 
 # Software Engineering Methods
-* Master Build Status  ![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/cruzcgbz/sem/main.yml?branch=master)
-* Develop Branch Status ![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/cruzcgbz/sem/main.yml?branch=develop)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/cruzcgbz/sem/main.yml?branch=master)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/cruzcgbz/sem/main.yml?branch=develop)
 * License [![LICENSE](https://img.shields.io/github/license/cruzcgbz/sem.svg?style=flat-square)](https://github.com/cruzcgbz/sem/blob/master/LICENSE)
 * Release [![Releases](https://img.shields.io/github/release/cruzcgbz/sem/all.svg?style=flat-square)](https://github.com/cruzcgbz/sem/releases)
