@@ -2,16 +2,18 @@ package com.napier.sem;
 
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
-import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 
-public class App {
-    public static void main(String[] args) {
-        // Connect to MongoDB using the new driver version
+public class AppBackup
+{
+    public static void main(String[] args)
+    {
+        // Connect to MongoDB on the local system using port 27000
         MongoClient mongoClient = MongoClients.create("mongodb://localhost:27000");
 
-        // Get a database - will create it if it does not exist
+        // Get a database - will create when we use it
         MongoDatabase database = mongoClient.getDatabase("mydb");
 
         // Get a collection from the database
@@ -30,7 +32,7 @@ public class App {
         Document myDoc = collection.find().first();
         System.out.println(myDoc.toJson());
 
-        // Close the MongoDB client
+        // Close the MongoClient instance
         mongoClient.close();
     }
 }
