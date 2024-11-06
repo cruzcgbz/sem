@@ -8,8 +8,11 @@ import org.bson.Document;
 
 public class App {
     public static void main(String[] args) {
-        // Connect to MongoDB using the new driver version
-        MongoClient mongoClient = MongoClients.create("mongodb://localhost:27000");
+        // Connect to MongoDB server using the new driver version with hostname
+        //MongoClient mongoClient = MongoClients.create("mongodb://mongo-dbserver");
+        // Connect to MongoDB
+        MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017");
+
 
         // Get a database - will create it if it does not exist
         MongoDatabase database = mongoClient.getDatabase("mydb");
